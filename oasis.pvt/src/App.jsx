@@ -1,8 +1,15 @@
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
-import Navbar from '/Component/Nav'
 
 
-import './App.css'
+
+
+// import './App.css'
+import Navbar from './Component/nav'
+import Contact from './Component/Contact'
+import Home from './Component/home'
+import Cerosil from './Component/cerosil'
+
+
 function App(){
 
 
@@ -10,6 +17,9 @@ function App(){
     <BrowserRouter>
     <Routes>
       <Route path="/"element={<Navbar/>}>
+      <Route index element={<Home/>}/>
+      <Route path='Contact'element={<Contact/>}/>
+      <Route path='Cerocil'element={<Cerosil/>}/>
 
       </Route>
       </Routes>
